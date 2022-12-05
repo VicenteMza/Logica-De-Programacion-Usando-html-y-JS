@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1> Media de edades</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");   
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function esPar(numero){
+		return (numero % 2) == 0;
+	}
+
+    var cantMiembros = parseInt(prompt("Ingrese la cantidad de miembros de la familia"));
+    var contador = 1;
+    var edades =0;
+
+    while(contador <= cantMiembros){
+    	edades += parseInt(prompt("Ingrese la edad"));
+
+    	contador++;
+    }
+    
+    var mediaEdad = edades/cantMiembros;
+
+    imprimir("La media de las edades de la familia es: " + mediaEdad);
+    imprimir("FIN");
+
+    imprimir("Imprimir numeros pares hasta el 100");
+    saltarLinea();
+
+    for (var i = 0; i <= 100; i++) {
+    	if (esPar(i)) {
+    		imprimir(i);
+    	}
+    }
+    imprimir("FIN");
+
+   </script>
+</body>
+</html>

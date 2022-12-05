@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1> Tabla de Multiplicar</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");   
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+   var numMulpiplicar = parseInt(prompt("Ingrese el numero a multiplicar"));
+
+   var multi = 1;
+	imprimir("Tabla del: " + numMulpiplicar+ " con un Bucle WHILE");
+   while(multi <= 10){
+   		imprimir(numMulpiplicar + " x " + multi + "= " + (multi*numMulpiplicar));
+   		multi ++;
+   }
+
+   saltarLinea();
+   imprimir("Tabla del: " + numMulpiplicar + " con un Bucle FOR");
+   for (var i = 1; i <= 10 ; i++) {
+   	imprimir(numMulpiplicar + " x " + i + "= " + (i*numMulpiplicar));
+   }
+
+   </script>
+</body>
+</html>

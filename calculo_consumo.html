@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<h3>¿Alcohol o gasolina?</h3>
+<script type="text/javascript">
+	var tanque = 40;
+	var recorrido_total = 480;
+	var calculo_eficiencia = recorrido_total/tanque;
+
+	document.write("El auto tiene una eficiencia usando nafta como combustible de " +calculo_eficiencia + " Km/L");
+	document.write("<br/><br/>");
+
+recorrido_total = 300;
+calculo_eficiencia = recorrido_total/tanque
+	document.write("El auto tiene una eficiencia usando alcohol como combustible de " +calculo_eficiencia + " Km/L");
+
+
+
+</script>
+
+<script type="text/javascript">
+	function saltarLinea() {
+		document.write("<br/><br/>");
+	}
+
+	function diferencia_de_edad(edad1, edad2) {
+		dif_edad = edad1 - edad2;
+		
+		if (dif_edad < 0) {
+		dif_edad = dif_edad * (-1);	
+		} 
+		return dif_edad;
+	}
+
+	var edad_propia= 40;
+	var edad_hermano = 38;
+	saltarLinea();
+
+	document.write("nuestra diferencia de edad es: " + diferencia_de_edad(edad_propia, edad_hermano) + " años");
+</script>
+</body>
+</html>

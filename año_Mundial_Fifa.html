@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1> Programa año mundial FIFA</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    
+
+    var anioMundial = 1930;
+
+    alert("El primer mundial de la FIFA fue en el año " + anioMundial);
+
+    while(anioMundial < 2023){
+    	
+    	alert("Hubo un mundial de la FIFA en el año " + anioMundial);
+    	anioMundial = anioMundial + 4;
+    }
+
+    alert("Fin");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1> Programa de Adivinanza de Numero</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function sorteo(n){
+    	return Math.round(Math.random()*n);
+    }
+   var numMaxBuscar =parseInt(prompt("Ingrese un número maximo a buscar"));
+    var numeroPensado = sorteo(numMaxBuscar);
+    var numeroLanzado = parseInt(prompt("Ingrese un número 1-"+ numMaxBuscar));
+
+    if (numeroPensado == numeroLanzado){
+        imprimir("usted acertó, el numero buscado es: "+ numeroPensado)
+    }else if (numeroPensado < numeroLanzado) {
+
+        imprimir("usted erró, el número buscado es menor al que ingreso " + numeroPensado)    
+    } else{
+    	imprimir("usted erró, el número buscado es mayor al que ingreso " + numeroPensado)
+    }
+
+</script>
+</body>
+</html>
